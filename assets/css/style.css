@@ -1,0 +1,189 @@
+/* style.css */
+
+/* Import font modern */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Terapkan font ke seluruh halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5fafe; /* Latar belakang putih kebiruan */
+    color: #003366; /* Warna teks biru gelap */
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Ukuran font dasar */
+    line-height: 1.6; /* Tinggi garis untuk kenyamanan membaca */
+}
+
+/* Gaya Navbar */
+.navbar {
+    background-color: #003366; /* Warna biru elegan */
+    padding: 1rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih tajam */
+    transition: background-color 0.3s ease; /* Transisi halus untuk perubahan warna */
+}
+
+.navbar:hover {
+    background-color: #004080; /* Warna biru yang sedikit lebih terang saat hover */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Warna teks putih */
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+    border-radius: 5px; /* Sudut melengkung untuk link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #66b2ff; /* Warna biru muda saat hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Latar belakang putih transparan saat hover */
+}
+
+/* Gaya tombol */
+.btn {
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem; /* Menyesuaikan padding tombol */
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem; /* Ukuran font tombol */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi untuk latar belakang dan transformasi */
+}
+
+.btn-primary {
+    background-color: #0056b3; /* Biru gelap untuk tombol */
+}
+
+.btn-primary:hover {
+    background-color: #004080; /* Biru yang lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek sedikit mengangkat tombol saat hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Merah untuk tombol hapus */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Merah yang lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek sedikit mengangkat tombol saat hover */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Kuning untuk tombol edit */
+    color: #212529; /* Warna teks gelap untuk kontras */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Kuning yang lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek sedikit mengangkat tombol saat hover */
+}
+
+/* Gaya kartu */
+.card {
+    border: none;
+    border-radius: 10px; /* Sudut lebih melengkung */
+    box-shadow: 0px 10px 20px rgba(0, 76, 153, 0.15); /* Bayangan lembut biru */
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus untuk kartu */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek mengangkat kartu saat hover */
+    box-shadow: 0px 15px 30px rgba(0, 76, 153, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; /* Sesuaikan dengan sudut kartu */
+    border-top-right-radius: 10px; /* Sesuaikan dengan sudut kartu */
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    color: #003366; /* Warna biru gelap untuk judul */
+    font-weight: 600; /* Mengubah menjadi lebih tebal */
+    margin-bottom: 0.5rem; /* Jarak bawah judul */
+}
+
+.card-text {
+    color: #006bb3; /* Warna teks biru lebih terang */
+    font-weight: 400; /* Ubah menjadi lebih tebal untuk teks */
+}
+
+/* Gaya judul */
+h1, h2, h3, h4, h5, h6 {
+    color: #003366; /* Warna biru gelap */
+    font-weight: 600; /* Mengubah menjadi lebih tebal */
+    margin-bottom: 0.5rem; /* Jarak bawah judul */
+}
+
+/* Gaya paragraf */
+p {
+    color: #003366; /* Warna biru gelap untuk teks */
+    font-weight: 300;
+}
+
+/* Jarak antar elemen */
+.content, .container {
+    padding-top: 20px;
+}
+
+/* Gaya untuk container elemen dengan margin */
+.d-flex {
+    display: flex;
+    justify-content: space-between; /* Menyusun tombol Edit dan Hapus */
+}
+
+/* Gaya untuk tombol Edit dan Hapus */
+.text-white {
+    color: white !important; /* Menggunakan !important jika perlu untuk mengatasi gaya lain */
+}
+
+.modal-content {
+    border-radius: 1rem; /* Membuat sudut lebih bulat */
+}
+
+/* Media Query untuk tampilan responsif */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Mengurangi ukuran font untuk layar kecil */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Mengurangi ukuran font tombol */
+        padding: 0.5rem 1rem; /* Menyesuaikan padding tombol */
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Menyesuaikan ukuran judul kartu */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Menyesuaikan ukuran teks kartu */
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 0.4rem 0.8rem; /* Ukuran tombol lebih kecil untuk layar sangat kecil */
+    }
+}
+/* Mengurangi ukuran font untuk judul dan teks di halaman album */
+.card-title {
+    font-size: 1.25rem; /* Ukuran font lebih kecil untuk judul */
+}
+
+/* style.css */
+
+/* Ukuran font lebih kecil untuk paragraf, input, dan sel tabel */
+p, .form-control, .table td {
+    font-size: 0.875rem; /* Ukuran font lebih kecil */
+}
+
+/* Gaya tombol lebih kecil */
+.btn-sm {
+    font-size: 0.8rem; /* Ukuran font lebih kecil */
+    padding: 0.4rem 0.8rem; /* Mengurangi padding tombol */
+}
